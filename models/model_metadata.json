@@ -1,0 +1,112 @@
+{
+  "numerical_features": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalch",
+    "oldpeak",
+    "ca"
+  ],
+  "categorical_features": [
+    "sex",
+    "dataset",
+    "cp",
+    "fbs",
+    "restecg",
+    "exang",
+    "slope",
+    "thal"
+  ],
+  "categorical_options": {
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "dataset": [
+      "Cleveland",
+      "Hungary",
+      "Switzerland",
+      "VA Long Beach"
+    ],
+    "cp": [
+      "asymptomatic",
+      "atypical angina",
+      "non-anginal",
+      "typical angina"
+    ],
+    "fbs": [
+      "False",
+      "True"
+    ],
+    "restecg": [
+      "lv hypertrophy",
+      "normal",
+      "st-t abnormality"
+    ],
+    "exang": [
+      "False",
+      "True"
+    ],
+    "slope": [
+      "downsloping",
+      "flat",
+      "upsloping"
+    ],
+    "thal": [
+      "fixed defect",
+      "normal",
+      "reversable defect"
+    ]
+  },
+  "numerical_ranges": {
+    "age": {
+      "min": 28.0,
+      "max": 77.0,
+      "median": 54.0
+    },
+    "trestbps": {
+      "min": 0.0,
+      "max": 200.0,
+      "median": 130.0
+    },
+    "chol": {
+      "min": 0.0,
+      "max": 603.0,
+      "median": 223.0
+    },
+    "thalch": {
+      "min": 60.0,
+      "max": 202.0,
+      "median": 140.0
+    },
+    "oldpeak": {
+      "min": -2.6,
+      "max": 6.2,
+      "median": 0.5
+    },
+    "ca": {
+      "min": 0.0,
+      "max": 3.0,
+      "median": 0.0
+    }
+  },
+  "best_model_name": "Logistic Regression",
+  "all_results": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8478,
+      "Precision": 0.8304,
+      "Recall": 0.9118,
+      "F1-Score": 0.8692,
+      "ROC-AUC": 0.9284
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.8315,
+      "Precision": 0.8817,
+      "Recall": 0.8039,
+      "F1-Score": 0.841,
+      "ROC-AUC": 0.9193
+    }
+  ]
+}
